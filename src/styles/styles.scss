@@ -1,0 +1,81 @@
+@import '../styles/null.scss';
+@import '../styles/icons.scss';
+@import '../styles/constructor.scss';
+@import '../styles/calculator.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap');
+
+#root {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    background-color: #3a7c6d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-family: 'Inter';
+}
+
+.app {
+    width: 695px;
+    height: 640px;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 120%;
+    margin: 15px;
+    padding: 38px 80px;
+}
+
+.header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: end;
+
+    &__buttons {
+        display: flex;
+        width: 243px;
+        height: 38px;
+        background: #F3F4F6;
+        border-radius: 6px;
+        padding: 1px;
+    }
+
+    &__icon {
+        font-size: 14px;
+        margin-right: 12px;
+
+        &.active {
+            color: #5D5FEF;
+        }
+    }
+
+    &__button {
+        padding: 0 12px;
+        background: #FFFFFF;
+        border: 1px solid #E2E3E5;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+        color: #4D5562;
+
+        &.noactove {
+            background: none;
+            border: none;
+        }
+    }
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    &.flex-end {
+        justify-content: end;
+    }
+}
