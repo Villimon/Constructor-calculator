@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Constructor-calculator/static/css/main.b9c545c7.css",
+    "main.js": "/Constructor-calculator/static/js/main.c242f91f.js",
+    "static/media/icomoon.svg?uj4ief": "/Constructor-calculator/static/media/icomoon.69a7af685d9eba8dd60c.svg",
+    "static/media/icomoon.eot?uj4ief": "/Constructor-calculator/static/media/icomoon.4b3de5d8b6c9bcb61b0a.eot",
+    "static/media/icomoon.woff?uj4ief": "/Constructor-calculator/static/media/icomoon.44256a5e3ea54b51c176.woff",
+    "static/media/icomoon.ttf?uj4ief": "/Constructor-calculator/static/media/icomoon.35a50f70c5ccc2e8a2e1.ttf",
+    "index.html": "/Constructor-calculator/index.html",
+    "main.b9c545c7.css.map": "/Constructor-calculator/static/css/main.b9c545c7.css.map",
+    "main.c242f91f.js.map": "/Constructor-calculator/static/js/main.c242f91f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9c545c7.css",
+    "static/js/main.c242f91f.js"
+  ]
+}
