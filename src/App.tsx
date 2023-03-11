@@ -21,12 +21,22 @@ function App() {
 
   const dispatch = useDispatch()
 
+  console.log(firstValue)
+  console.log(secontValue)
+  console.log(result)
 
   //Если ответ получается большим
   useEffect(() => {
-    let whole = Math.trunc(Number(result))
-    if (String(result).length > 10) {
-      setResult(Number(result).toFixed(9 - String(whole).length))
+    if (result !== 'Не определено') {
+      if (String(result).length > 10) {
+        let whole = Math.trunc(Number(result))
+        setResult(Number(result).toFixed(9 - String(whole).length))
+      }
+    }
+    //Если делим на ноль
+    if (+result == Infinity) {
+      setResult('Не определено')
+      document.querySelector('.constructor__panel-result')?.classList.add('small')
     }
     setFirstValue('')
     setSecontValue('')
@@ -60,11 +70,7 @@ function App() {
 
   }
 
-  //Если делим на ноль
-  if (+result == Infinity) {
-    setResult('Не определено')
-    document.querySelector('.constructor__panel-result')?.classList.add('small')
-  }
+
 
   //Итог вычислений
   const resultValue = () => {
